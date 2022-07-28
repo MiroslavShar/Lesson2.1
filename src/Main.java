@@ -20,6 +20,8 @@ public class Main {
 
 
         ArrayList<String> list = new ArrayList<>();
+
+
         String name = focusColor + " " + focusBrand + " " + focusYear;
         String name2 = lamboColor + " " + lamboBrand + " " + lamboYear;
         String name3 = alpineColor + " " + alpineBrand + " " + alpineYear;
@@ -34,5 +36,14 @@ public class Main {
         System.out.println(list.get(0));
         System.out.println(list.get(1));
         System.out.println(list.get(2));
+    }
+
+    class NewList extends CarNew {
+        int speed;
+
+        public NewList(String color, int year, String brand, int speed) {
+            super(color, year, brand);
+            speed = 320;
+        }
     }
 }
